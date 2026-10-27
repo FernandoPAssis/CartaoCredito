@@ -1,6 +1,6 @@
 @Cartao.Api_HostAddress = http://localhost:5238
 
-GET {{Cartao.Api_HostAddress}}/weatherforecast/
+GET {{Cartao.Api_HostAddress}}/api/v1/cartoes/COLE-O-ID-DO-CLIENTE-AQUI
 Accept: application/json
 
 ###

@@ -15,13 +15,10 @@ namespace Cartao.Tests
         [Fact]
         public void Emitir_QuandoUmCartaoAprovado_EmiteUmCartaoDeMilReais()
         {
-            // Arrange
             Guid clienteId = Guid.NewGuid();
 
-            // Act
             List<CartaoCredito> cartoes = EmissorCartao.Emitir(clienteId, Guid.NewGuid(), "Cliente Teste", 1, 1000);
 
-            // Assert
             Assert.Single(cartoes);
             Assert.Equal(1000m, cartoes[0].Limite);
             Assert.Equal(clienteId, cartoes[0].ClienteId);
