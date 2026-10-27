@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Cartao.Api/Cartao.Api.csproj" />
+  <Project Path="Cartao.Tests/Cartao.Tests.csproj" />
+</Solution>
